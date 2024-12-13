@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Ödev</title>
+</head>
+<body>
+    
+
+    <h2>If-Else Örneği</h2>
+    <p>Bir sayıyı kontrol edin (Pozitif mi, Negatif mi, Sıfır mı?):</p>
+    <input type="number" id="numberInput" placeholder="Bir sayı girin">
+    <button onclick="checkNumber()">Kontrol Et</button>
+    <p id="ifElseResult"></p>
+
+    <h2>Matematiksel İşlem</h2>
+    <p>5 ile 3'ün toplamı:</p>
+    <p id="mathResult"></p>
+
+    <h2>For Döngüsü</h2>
+    <p>1'den 10'a kadar rakamlar:</p>
+    <ul id="forLoopResult"></ul>
+
+    <script>
+
+        function checkNumber() {
+            const number = parseInt(document.getElementById('numberInput').value);
+            let result;
+
+            if (number > 0) {
+                result = "Pozitif bir sayı girdiniz.";
+            } else if (number < 0) {
+                result = "Negatif bir sayı girdiniz.";
+            } else {
+                result = "Sayı sıfırdır.";
+            }
+
+            document.getElementById('ifElseResult').innerText = result;
+        }
+
+        const mathResult = 5 + 3;
+        document.getElementById('mathResult').innerText = `Sonuç: ${mathResult}`;
+
+        const forLoopResult = document.getElementById('forLoopResult');
+        for (let i = 1; i <= 10; i++) {
+            const listItem = document.createElement('li');
+            listItem.innerText = i;
+            forLoopResult.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
