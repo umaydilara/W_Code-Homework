@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembeyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffccdd;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-name {
+            font-size: 3em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #cc0055;
+            margin-left: 20px;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #007BFF;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin-top: 70px;
+            border-radius: 15px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            text-align: center;
+            margin: 100px 0;
+        }
+
+        .hero h1 {
+            font-family: 'Georgia', serif;
+            font-size: 1.8em;
+            color: #ff6699;
+        }
+
+        .features {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            background-color: #ffe6f5;
+            padding: 10px;
+            border-radius: 15px;
+            width: 30%;
+            min-width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .art-section {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .art-section img {
+            max-width: 50%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .art-section .text-content {
+            width: 45%;
+            font-size: 13px; /* Yazı boyutunu küçülttüm */
+        }
+
+        .art-section .toggle-list {
+            margin-top: 20px;
+        }
+
+        .art-section .toggle-list details {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #ffccdd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #cc0055;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-name">Pembeyle</div>
+        <nav>
+            <a href="#hero">Anasayfa</a>
+            <a href="#equality">Fırsat eşitliği nedir?</a>
+            <a href="#education">Eğitimler</a>
+            <a href="#if-bored">Eğer Canın Sıkılırsa</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Eğer bir kız pembeden nefret etmeye başladıysa fırsat eşitsizliğiyle tanışmış demektir.</h1>
+    </section>
+
+    <section id="equality">
+        <h2>Fırsat Eşitliği Nedir?</h2>
+        <p style="font-size: 20px;">Fırsat eşitliği, kişilerin hayata eş imkanlarla başlaması ve mevcut fırsatlara herkesin eşit derecede sahip olması gerektiğini belirten, Amerikan ve Fransız devrimlerinin de temel yapısı olan eşitlik türü.[1][2]
+
+            Herkesin eşit koşullarda başladığı bir sürecin, kişinin ilerleme gücü ve yetenekleri doğrultusunda farklı konumlara ulaştığı eşit olmayan bir durumla sonuçlanması gerektiğini belirten fırsat eşitliği kavramı, Margaret Thatcher tarafından ‘eşit olmama hakkı’ olarak tanımlanır. Politik görüş, ırk ya da cinsiyet gibi etkenlerden oluşmaması beklenilen kariyer durumu, fırsat eşitliği ilkeleri doğrultusunda yeteneklere göre şekillenir. Bu koşullar yardımıyla ortaya bireylerin sahip oldukları mevkilerin kendi becerileri ile belirlendiği (liyakata dayalı) bir meritokrasi durumu çıkar.</p>
+    </section>
+
+    <section id="education" class="features">
+        <h2>Eğitimler</h2>
+        <div class="feature">
+            <img src="https://coderspace-storage-prod.s3.eu-central-1.amazonaws.com/media/cache/c3/41/c3417d7f7a572c9a83efc51c7b21c3a5.webp" alt="Feature 1"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Ford Otosan'ın Gerçekleştirdiği "Gelecek Hayalim" programı STEM alanındaki kız öğrencilerin sayılarını arttırmaya yönelik bu program tam sana göre!</p>
+            <a href="https://coderspace.io/etkinlikler/gelecek-hayalim-projesi/">Program Başvuru Linki</a>
+        </div>
+        <div class="feature">
+            <img src="https://static.wixstatic.com/media/407b54_193e74f2d151437ab2a01c90b56978ee~mv2.jpg/v1/crop/x_0,y_23,w_1200,h_584/fill/w_1200,h_583,al_c,q_85,enc_avif,quality_auto/G%C3%BCvenlik%20Akademisi%201200x630_edited.jpg" alt="Feature 2"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>UpSchool'un gerçekleştirdiği Güvenlik Akademisi başvuru linki ve bilgilendirmesine aşağıdaki linkten ulaşabilirsiniz.</p>
+            <a href="https://airtable.com/appPGWSP7eLG8bO9m/shroMpUoqvL35v4Tq">Program Başvuru Linki</a>
+        </div>
+        <div class="feature">
+            <img src="https://wofh.fra1.digitaloceanspaces.com/public/5060/NOxQgBT0r0pQhnlB3f0moxywxtH9DtXl0p1ZvaPp.png" alt="Feature 3"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Ludi'yle birlikte markalarla anlaşmalı iş simülasyonlarına katılarak sertifika kazanın. Detaylar Aşağıdaki linkte.</p>
+            <a href="https://ludi.center/ludi/courses?filter=available-courses">LUDİ iş simülasyonları</a>
+        </div>
+        <div class="feature">
+            <img src="https://sisterslab.org/wp-content/uploads/2021/02/sisterslab-logo.png" alt="Feature 4"><!-- Fotoğrafı buraya koyacaksın -->
+            <p> SistersLab Women in Tech Akademide katılımcılar Python yazılım dili üzerinde teknik becerilerini geliştirecekler. Ayrıntı ve başvuru için linke tıklayınız.</p>
+            <a href="https://sisterslab.org/women-in-tech-academy/#w-tech-basvur">Women in Tech Academy</a>
+        </div>
+        <div class="feature">
+            <img src="https://s3.eu-central-1.amazonaws.com/stajim/media/images/event/1632_20241128153330.png" alt="Feature 5"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Bu alanda kadınların başarılarını ve ilham veren hikayelerini paylaşmak amacıyla düzenlenen Women in Engineering Career Summit, mühendislik kariyeri hedefleyenleri bir araya getirerek eşsiz bir deneyim sunuyor.</p>
+            <a href="https://www.youthall.com/tr/event/women-in-engineering-career-summit-3/">Women in Engineering Summit</a>
+        </div>
+        <div class="feature">
+            <img src="https://assets.geaturkiye.com/img/gea-logo-beyaz.png?v=1.0.26" alt="Feature 6"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Global Executive Academy'yle birçok deneyimli mühendis ve yöneticilerle bir araya gelin. Detaylara başvuru linkinden ulaşabilirsiniz.</p>
+            <a href="https://geaturkiye.com/">Global Executive Academy</a>
+        </div>
+        <div class="feature">
+            <img src="https://cdn.prod.website-files.com/658d627c8d384d416989b728/658d6333a738c0b729fbb1d4_Kodluyoruz_Turuncu%20logo_Yatay-p-500.png" alt="Feature 7"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Hi-Kod Atölyesi ile belirlediğin alanda yazılım yolculuğuna ilk adımını at!</p>
+            <a href="https://www.kodluyoruz.org/product/hi-kod-2-0---6-atolye">Hi-Kod</a>
+        </div>
+        <div class="feature">
+            <img src="https://coderspace-storage-prod.s3.eu-central-1.amazonaws.com/static/img/brand/coderspace-logo.svg" alt="Feature 8"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Dijitalleşen dünyanın en büyük kaynaklarından biri olan veriyi "Veri Mühendisliği" veya "Veri Bilimi" alanında verilecek online ve yüz yüze eğitim fırsatlarıyla keşfetme imkanı sağlarken, birbirinden değerli ödüllerle heyecan verici bir yolculuğa adım atma imkanı sunuyor.</p>
+            <a href="https://coderspace.io/etkinlikler/turk-telekom-buyuk-veri-kampi/">Türk Telekom Büyük Veri Kampı</a>
+        </div>
+        <div class="feature">
+            <img src="https://yapayzekaveteknolojiakademisi.com/wp-content/uploads/2024/12/Akademiyi-farkli-kilanlar-2048x1221.png" alt="Feature 9"><!-- Fotoğrafı buraya koyacaksın -->
+            <p>Girişimcilik ekosistemi ile tanışarak, eşsiz bir networke dahil olma fırsatı ve yapay zeka temelli ürünler ve ileri veri modelleri geliştirme deneyimi ve daha birçoğuyla Yapay Zeka Teknoloji Akademisi!</p>
+            <a href="https://yapayzekaveteknolojiakademisi.com/hakkimizda/">Akademi Sayfası</a>
+        </div>
+    </section>
+
+    <section id="if-bored">
+        <h2>Eğer Canın Sıkılırsa</h2>
+        <div class="art-section">
+            <img src="https://seyler.ekstat.com/img/max/800/M/MWfAYJuwfKbolP9m-637678216552174801.jpg" alt="Arnolfini'nin Düğünü"><!-- Fotoğrafı buraya koyacaksın -->
+            <div class="text-content">
+                <p style="font-size: 22px;">an van Eyck Arnolfini’nin Düğünü
+
+                    Tarih: 1434,
+                    
+                    Orijinal Boyut: 82 x 59,5 cm,
+                    
+                    Yer: National Gallery, Londra.
+                    
+                    Teknik: Ahşap üzeri yağlı boya.</p>
+                <p style="font-size: 22px;">ESER ANALİZİ
+                    Büyüleyici detaylar ve girift sembolizm ile dolu Arnolfini Portresi / Arnolfini’nin Düğünü tablosu, Rönesans Hollanda’sında ahşap üzerine yapılmış, zengin bir çiftin yatak odalarında el ele tutuşunu resmeden formal bir tablodur. Flaman yağlıboya resminin Robert Campin (1380-1444) ve Roger van der Weyden (1400-1464) ile birlikte önde gelen ressamı Jan van Eyck tarafından yapılmıştır. Yağlıboya resmin ilk örneklerinden olarak kabul edilir. Resim dikey (ortogonal) perspektif tekniğiyle yapılmış ilk interiör (iç mekan) resimlerdendir. Bu teknik sayesinde resimde görülen figürler hemen önünüzdeymiş de bir adım atsanız resmin içine girecekmişsiniz hissi vermektedir.
+                    
+                    Resimde görülen mekan, günümüzde Belçika’da bulunan Bruges şehridir ki resimde görülen zamanda güçlü Burgundy Dükalığı’nın en önemli ticaret merkezidir. Resimde görülen çiftin kimliğine dair bir işaret ilk planda görünmemektedir. Resmin yapılışından yüz yıl sonra, resimdeki kişilerin Bruges’de işyeri bulunan Lucca’lı zengin tacir Giovanni di Nicolao Arnolfini ile İtalyan bir bankerin kızı olan Giovanna Cenami olduğu düşünülmüş ancak günümüzde bu ihtimalin yanlış olabileceği değerlendirilmektedir. Ek olarak, 1934 yılında ünlü sanat tarihçisi Erwin Panofsky, resmin bir nikahı konu ettiğini belirtmiştir.
+                    
+                    Dini resim sanatının başyapıtlarından Ghent Altarpiece (1432, Bavo Cathedral) ve Man in a Red Turban (1433, National Gallery, London) olarak bilinen kendi portresi ile birlikte Arnolfini Portresi, Jan van Eyck’ın naturalizm ve Kuzey Rönesans Okulu’na yaptığı katkının güçlü bir örneği olmasının yanında bu okulun yağlıboya resimde ne kadar olağanüstü bir ustalık seviyesinde olduğunu göstermektedir.</p>
+            </div>
+            <div class="toggle-list">
+                <h2 style="color: #cc0055;">Kitap Önerileri</h2>
+                <details>
+                    <summary>Kadınlar Ülkesi - Charlotte Perkins Gilman</summary>
+                    <p>“Kadınlar Ülkesi kadınların neler yapabileceğini incelik ve zarafetle anlatan, gülümseten bir ütopya.” -Marge Piercy</p>
+                </details>
+                <details>
+                    <summary>Kurtlarla Koşan Kadınlar - Clarissa Pinkola Estés</summary>
+                    <p>“Kadın ve edebiyat” arasındaki bağlantıyı kurmaca bir yazıyla ve karakterleriyle anlatan Woolf, kadınların neden daha az şiir yazdığını veya neden erkekler kadar yaratıcı olamadığını anlattığı eserinde, tarihsel süreç içerisinde kadının toplumdaki yerini de ele alıyor.</p>
+                </details>
+                <details>
+                    <summary>Yerdeniz Serisi - Ursula K. Le Guin</summary>
+                    <p>Yazarın hayatımızdaki bazı konuları yarattığı doğaüstü dünyasını metafor olarak kullanıp anlatan harika bir seri.</p>
+                </details>
+                <details>
+                    <summary>Kendine Ait Bir Oda - Virginia Woolf</summary>
+                    <p>“Kadın ve edebiyat” arasındaki bağlantıyı kurmaca bir yazıyla ve karakterleriyle anlatan Woolf, kadınların neden daha az şiir yazdığını veya neden erkekler kadar yaratıcı olamadığını anlattığı eserinde, tarihsel süreç içerisinde kadının toplumdaki yerini de ele alıyor.</p>
+                </details>
+                <details>
+                    <summary>Pürdikkat - Cal Newport</summary>
+                    <p>Jung veya Gates gibi tek bir konuda saatler boyu dünyadan soyutlanarak çalışabilmek şöyle dursun, azıcık can sıkıntısına bile tahammülümüz kalmadı: gözümüz her an telefonlarımızda. Dahası, insana dikkatini toplama imkânı vermeyen günümüz çalışma kültürünü normal zannediyoruz. Hep daha çok çalışıyoruz, gece yarısı dahi e-postalarımıza yanıt veriyoruz, mesailer uzadıkça uzuyor, fakat ne hikmetse işler bir türlü bitmiyor. Peki, sevdiklerimize bile zaman ayıramadığımız bu hayatın nesinde anlam buluyoruz?
+                        Cal Newport, işte bu çalışma kültürünü elimizin tersiyle iterek odaklanma becerisini geri kazanabilmemiz için “pürdikkat çalışma” adını verdiği, zanaatkârlıktan ilham alan yeni bir çalışma kültürü öneriyor.</p>
+                </details>
+                <h2 style="color: #cc0055;">TedTalks</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=mcM1-Dmyq_0">Sen Değiş, Dünyan Değişsin</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=p_x6QaqXkKA&t=277s">İKİNCİ EL HAYALLER: Kendine Ait Bir Yaşam Nasıl Kurulur?</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=jOvbKMxLOPQ&list=WL&index=49">Güçlü Olmak İçin Neden Göç Etmelisin?</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=s8-4XrDd4a0">Tarih Okumaya Nereden Başlanır?</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav>
+            <a href="#hero">Anasayfa</a>
+            <a href="#equality">Fırsat eşitliği nedir?</a>
+            <a href="#education">Eğitimler</a>
+            <a href="#if-bored">Eğer Canın Sıkılırsa</a>
+        </nav>
+    </footer>
+</body>
+</html>
